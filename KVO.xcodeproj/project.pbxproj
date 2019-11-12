@@ -19,6 +19,10 @@
 		09E6769C237A8B0800020514 /* SPKVOFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E6769B237A8B0800020514 /* SPKVOFirstViewController.m */; };
 		09E6769F237A8B5C00020514 /* SPPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E6769E237A8B5C00020514 /* SPPerson.m */; };
 		09E676A2237A8DC700020514 /* SPStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E676A1237A8DC700020514 /* SPStudent.m */; };
+		09E676A6237AE9B900020514 /* SPKVOSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E676A5237AE9B900020514 /* SPKVOSecondViewController.m */; };
+		09E676AA237AEAAA00020514 /* KVOThiredViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E676A9237AEAAA00020514 /* KVOThiredViewController.m */; };
+		09E676AD237AEB1A00020514 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E676AC237AEB1A00020514 /* Person.m */; };
+		09E676B3237AEB7200020514 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E676B2237AEB7200020514 /* Student.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,14 @@
 		09E6769E237A8B5C00020514 /* SPPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPPerson.m; sourceTree = "<group>"; };
 		09E676A0237A8DC700020514 /* SPStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPStudent.h; sourceTree = "<group>"; };
 		09E676A1237A8DC700020514 /* SPStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPStudent.m; sourceTree = "<group>"; };
+		09E676A4237AE9B900020514 /* SPKVOSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPKVOSecondViewController.h; sourceTree = "<group>"; };
+		09E676A5237AE9B900020514 /* SPKVOSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPKVOSecondViewController.m; sourceTree = "<group>"; };
+		09E676A8237AEAAA00020514 /* KVOThiredViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOThiredViewController.h; sourceTree = "<group>"; };
+		09E676A9237AEAAA00020514 /* KVOThiredViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOThiredViewController.m; sourceTree = "<group>"; };
+		09E676AB237AEB1A00020514 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		09E676AC237AEB1A00020514 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		09E676B1237AEB7200020514 /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		09E676B2237AEB7200020514 /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +125,8 @@
 		09E67663237A8A1400020514 /* KVO */ = {
 			isa = PBXGroup;
 			children = (
+				09E676A7237AEA7E00020514 /* 自定义KVO */,
+				09E676A3237AE98D00020514 /* KVO原理探索 */,
 				09E67699237A8A4500020514 /* KVO初探 */,
 				09E67664237A8A1400020514 /* AppDelegate.h */,
 				09E67665237A8A1400020514 /* AppDelegate.m */,
@@ -158,6 +172,28 @@
 				09E676A1237A8DC700020514 /* SPStudent.m */,
 			);
 			path = "KVO初探";
+			sourceTree = "<group>";
+		};
+		09E676A3237AE98D00020514 /* KVO原理探索 */ = {
+			isa = PBXGroup;
+			children = (
+				09E676A4237AE9B900020514 /* SPKVOSecondViewController.h */,
+				09E676A5237AE9B900020514 /* SPKVOSecondViewController.m */,
+				09E676AB237AEB1A00020514 /* Person.h */,
+				09E676AC237AEB1A00020514 /* Person.m */,
+				09E676B1237AEB7200020514 /* Student.h */,
+				09E676B2237AEB7200020514 /* Student.m */,
+			);
+			path = "KVO原理探索";
+			sourceTree = "<group>";
+		};
+		09E676A7237AEA7E00020514 /* 自定义KVO */ = {
+			isa = PBXGroup;
+			children = (
+				09E676A8237AEAAA00020514 /* KVOThiredViewController.h */,
+				09E676A9237AEAAA00020514 /* KVOThiredViewController.m */,
+			);
+			path = "自定义KVO";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,12 +326,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09E676B3237AEB7200020514 /* Student.m in Sources */,
 				09E6766C237A8A1400020514 /* ViewController.m in Sources */,
 				09E6769C237A8B0800020514 /* SPKVOFirstViewController.m in Sources */,
+				09E676AD237AEB1A00020514 /* Person.m in Sources */,
 				09E67666237A8A1400020514 /* AppDelegate.m in Sources */,
 				09E67677237A8A2100020514 /* main.m in Sources */,
+				09E676A6237AE9B900020514 /* SPKVOSecondViewController.m in Sources */,
 				09E676A2237A8DC700020514 /* SPStudent.m in Sources */,
 				09E67669237A8A1400020514 /* SceneDelegate.m in Sources */,
+				09E676AA237AEAAA00020514 /* KVOThiredViewController.m in Sources */,
 				09E6769F237A8B5C00020514 /* SPPerson.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

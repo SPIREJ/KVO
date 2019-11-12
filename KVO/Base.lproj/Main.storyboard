@@ -15,16 +15,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0V-xv-Jt0">
-                                <rect key="frame" x="166" y="245" width="62" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="KVO初探"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0V-xv-Jt0">
+                                <rect key="frame" x="169" y="245" width="76" height="30"/>
+                                <state key="normal" title="1. KVO初探"/>
                                 <connections>
                                     <segue destination="Qxt-G2-kZP" kind="push" id="ZsH-4a-peA"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2XS-qg-BV4">
+                                <rect key="frame" x="152.5" y="355" width="109" height="30"/>
+                                <state key="normal" title="2. KVO原理探索"/>
+                                <connections>
+                                    <segue destination="EdD-Bn-jjT" kind="push" id="1Up-n4-McQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBV-L7-ihN">
+                                <rect key="frame" x="145" y="465" width="124" height="30"/>
+                                <state key="normal" title="3. 自定义KVO实现"/>
+                                <connections>
+                                    <segue destination="9d5-r0-lGs" kind="push" id="Fk1-wO-Eu5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="2XS-qg-BV4" firstAttribute="centerX" secondItem="i0V-xv-Jt0" secondAttribute="centerX" id="Ffp-7D-9GJ"/>
+                            <constraint firstItem="i0V-xv-Jt0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="P4e-vv-6dJ"/>
+                            <constraint firstItem="LBV-L7-ihN" firstAttribute="centerX" secondItem="2XS-qg-BV4" secondAttribute="centerX" id="QWh-ke-03d"/>
+                            <constraint firstItem="i0V-xv-Jt0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="157" id="Uj5-a6-7yI"/>
+                            <constraint firstItem="LBV-L7-ihN" firstAttribute="top" secondItem="2XS-qg-BV4" secondAttribute="bottom" constant="80" id="pcm-Zl-Qfz"/>
+                            <constraint firstItem="2XS-qg-BV4" firstAttribute="top" secondItem="i0V-xv-Jt0" secondAttribute="bottom" constant="80" id="ryl-94-soS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="gJu-ca-Zs3"/>
@@ -32,6 +53,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="127"/>
+        </scene>
+        <!--Thired View Controller-->
+        <scene sceneID="fOI-LY-nGL">
+            <objects>
+                <viewController id="9d5-r0-lGs" customClass="KVOThiredViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sl8-zy-quA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="7VX-2Z-9HZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Udd-JX-3nA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Imz-xW-jCk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="232" y="863"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="ONO-Tq-lYs">
+            <objects>
+                <viewController id="EdD-Bn-jjT" customClass="SPKVOSecondViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="09q-tQ-s07">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="QM9-ik-DDy"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="EcF-CM-JFh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYE-a2-OPt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="967" y="425"/>
         </scene>
         <!--First View Controller-->
         <scene sceneID="lar-wf-j4O">
@@ -47,7 +100,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ltO-Pv-H1u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="926" y="127"/>
+            <point key="canvasLocation" x="968" y="-236"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zNh-o7-5Wx">
